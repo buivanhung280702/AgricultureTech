@@ -1,0 +1,108 @@
+/* Tạo khoảng cách và căn giữa cho container */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #a0a0a0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Kiểu cho phần điều khiển (công tắc) */
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    width: 50px;
+    height: 24px;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.4s;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+
+/* Khi checkbox được bật */
+input:checked + .slider {
+    background-color: #66bb6a;
+}
+
+/* Chuyển vị trí của nút tròn khi bật */
+input:checked + .slider::before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}
+
+/* Kiểu cho phần hiển thị thông số */
+.sensors {
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.sensors p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Kiểu cho đồ thị */
+canvas {
+    max-width: 50%;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.charts {
+    display: flex;
+    justify-content: center; /* Căn giữa biểu đồ */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 20px; /* Khoảng cách giữa các biểu đồ */
+    margin-top: 20px; /* Khoảng cách phía trên */
+}
+
+

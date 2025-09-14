@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IOT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>DashBoard</h1>
+  <!-- Phần hiển thị giá trị cảm biến -->
+  <div class="controls">
+    <label class="switch">
+        <input type="checkbox" id="toggle-light">
+        <span class="slider round"></span>
+        Bật/Tắt Đèn
+    </label>
+    
+    <label class="switch">
+        <input type="checkbox" id="toggle-fan">
+        <span class="slider round"></span>
+        Bật/Tắt Quạt
+    </label>
+    
+    <label class="switch">
+        <input type="checkbox" id="toggle-alarm">
+        <span class="slider round"></span>
+        Bật/Tắt Còi
+    </label>
+
+    <label class="switch">
+      <input type="checkbox" id="toggle-auto">
+      <span class="slider round"></span>
+      Auto
+  </label>
+    </div>
+
+  <div class="sensor">
+    <p>Nhiệt độ: <span id="temperature">--</span> °C</p>
+    <p>Độ ẩm: <span id="humidity">--</span> %</p>
+    <p>Độ ẩm đất: <span id="soilMoisture">--</span> %</p>
+    <p>Ánh sáng: <span id="lightLevel">--</span> lux</p>
+  </div>
+
+  <div class="charts">
+    <canvas id="node1" width="30" height="15"></canvas>
+    <canvas id="node2" width="30" height="15"></canvas>
+  </div>
+</div>
+
+
+<!-- Link to Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="client1.js" defer></script>
+</body>
+</html>
+
