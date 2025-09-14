@@ -9,10 +9,10 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Cấu hình
-api_id = '25616146'  # ID của bạn
-api_hash = '2a9896803ebea0b5adeff92643b7ad7a'  # Hash của bạn
-bot_token = '6910494038:AAEODR6-qyCEnDwlYSUjMikNDPfdTCD6G5U'  # Token của bot
-WEBSOCKET_URL = 'ws://192.168.147.150:8080'  # Địa chỉ WebSocket server của bạn
+api_id = '***********'  # ID của bạn
+api_hash = '*******************'  # Hash của bạn
+bot_token = '****************************'  # Token của bot
+WEBSOCKET_URL = '**************************'  # Địa chỉ WebSocket server của bạn
 
 # Khởi tạo client Telegram
 client = TelegramClient('bot', api_id, api_hash)
