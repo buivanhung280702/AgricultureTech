@@ -6,7 +6,7 @@ const mongoose = require('mongoose'); // Import Mongoose
 let clients = [];
 
 // Kết nối đến MongoDB
-mongoose.connect('mongodb+srv://bhung7001:Hung28072002@cluster0.s0le1.mongodb.net/greentech?retryWrites=true&w=majority>
+mongoose.connect('mongodb+srv://****************@cluster0.s0le1.mongodb.net/greentech?retryWrites=true&w=majority>
     .then(() => {
         console.log('Đã kết nối đến MongoDB');
     })
